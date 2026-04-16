@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!--Font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                <span>G</span>
+                <span>G-portfolio</span>
+            </div>
+            <ul class="desktop-nav-links">
+
                 <li><a href="#">Hero</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -16,7 +25,118 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Skills</a></li>
             </ul>
+
+            <!--small screens-->
+            <div class="mobile">
+                <!--mobile hamburger-->
+                <button><i class="fa-solid fa-bars"></i></button>
+
+                <!--Mobile dropdown-->
+                <!-- <li><a href="#">Hero</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li> -->
+            </div>
         </nav>
     </header>
+
+    <main>
+        <section class="Hero">
+            <h1>Edeh Gift Chinenye</h1>
+            <p>Aspiring Full-Stack Developer</p>
+
+            <a href="#">View</a>
+
+            <div class="overlay"></div>
+        </section>
+
+        <section class="About">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ducimus recusandae hic minima sed earum nihil id sapiente ad tenetur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ducimus recusandae hic minima sed earum nihil id sapiente ad tenetur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ducimus recusandae hic minima sed earum nihil id sapiente ad tenetur!</p>
+
+            <a href="#">Read more</a>
+            <div>
+                <img src="./images/" alt="">
+            </div>
+
+            <!-- <div>
+            <img src="../image/man on computer.jpg" alt="Image of a man using a computer.">
+        </div> -->
+        </section>
+
+        <section class="Skills">
+            <h2>Technologies</h2>
+            <div>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i></li>
+                    <li><i class="fa-brands fa-css"></i></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-tailwind-css"></i></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="Projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>
+                    <img src="" alt="School News Portal">
+                    <a href="#">View</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, fugiat.</p>
+                </li>
+                <li>
+                    <img src="" alt="Personal Profile">
+                    <a href="#">View</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, fugiat.</p>
+                </li>
+                <li>
+                    <img src="" alt="Trave Agency Website/ Coming soon...,">
+                </li>
+            </ul>
+        </section>
+
+        <section class="Contact">
+
+            <div class="contact-intro">
+                <h2>Get In Touch</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, amet.</p>
+            </div>
+            <form>
+                <div class="first-last">
+                    <div>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Enter your first name..">
+                    </div>
+
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Enter your last name..">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="example@email.com..">
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </div>
+
+                <div class="Social media links">
+                    <ul>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                        <li><i class="fa-brands fa-github"></i></li>
+                    </ul>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; All Right Reserved.
+    </footer>
 </body>
 </html>
