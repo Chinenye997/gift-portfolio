@@ -47,11 +47,22 @@ header nav{
     gap: 6px;
 }
 
-.logo span:first-child{
+.logo span:nth-child(1){
     width: 35px;
     height: 35px;
     background: black;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.logo span:nth-child(2){
+    width: 35px;
+    height: 35px;
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
